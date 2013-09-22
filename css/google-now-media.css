@@ -1,0 +1,40 @@
+
+.media{
+	margin-bottom: 1em;
+}
+@media handheld, only screen and (max-width:767px) {
+	.media{
+		position: relative;
+		box-shadow: 0 3px 5px #888;
+		border-right: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		overflow: hidden;
+	}
+	
+	.media .pull-left{
+		position: absolute;
+		height: 100%;
+	}
+
+	.media .media-object{
+		width: 100%;
+		position: absolute;
+		z-index: -999999;
+		display: block;
+		padding-bottom: 100%;
+	}
+
+	.media .media-body{
+		position: relative;
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		width: 100%;
+		margin-top: 40%;
+		padding: 6px;
+		bottom: 0px;
+		left: 0px;
+	}
+	.media .media-body a{
+		color: white;
+	}
+}
